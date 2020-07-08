@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>BOSTON HOUSE app</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+
+    <body bgcolor=#92a8d1>
+        <p>WELCOME {{ name }} </p>
+        <p>your email id is {{ email }}</p>
+
+         
+        
+
+        <center>
+
+        <h1> BOSTON HOUSE PREDICTION </h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b> crim :  <input type="text", name='crim', placeholder="enter crim"> <br><br>
+            zn :  <input type="text", name='zn', placeholder="enter zn"> <br><br>
+            indus :  <input type="text", name='indus', placeholder="enter indus"> <br><br>
+            chas : <input type="text", name='chas', placeholder="enter chas"> <br><br>
+            nox :  <input type="text", name='nox', placeholder="enter nox"> <br><br>
+            rm :  <input type="text", name='rm', placeholder="enter rm"> <br><br>
+            age :  <input type="text", name='age', placeholder="enter age"> <br><br>
+            dis : <input type="text", name='dis', placeholder="enter dis"> <br><br>
+            rad :  <input type="text", name='rad', placeholder="enter rad"> <br><br>
+            tax :  <input type="text", name='tax', placeholder="enter tax"> <br><br>
+            ptr :  <input type="text", name='ptr', placeholder="enter ptr"> <br><br>
+            b :  <input type="text", name='b', placeholder="enter b"> <br><br>
+            lstat : <input type="text" name="lstat" placeholder="lstat"><br><br><br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        
+        
+
+        
+        
+    </center>
+
+    </body>
+</html>
